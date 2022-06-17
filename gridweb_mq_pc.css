@@ -120,9 +120,32 @@ main .box10 {
    
     main .box2 {
       grid-column: 4 / 6;
+      position: relative;
+      overflow: hidden;
+    }
+    main .box2 img {
+      position: absolute;
+      right: -200px; bottom: 20px;
+      opacity: 0.7;
+    }
+    main .box2:hover img {
+      animation: mouse_event 1s forwards ;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
     }
     main .box3 img {
       animation: ani1 infinite 5s linear;
+    }
+    main .box4 {
+      position: relative;
+    }
+    main .box4 p {
+      font-weight: 900;
+      font-size: 2rem;
+      display: grid;
+      justify-items: center;
+      position: absolute;
+      bottom: 0; 
     }
     main .box7 {
       grid-column: 4;
@@ -149,6 +172,13 @@ main .box10 {
     @keyframes ani1 {
       100% {
         transform: rotate(360deg);
+      }
+    }
+
+    @keyframes mouse_event  {
+      
+      100% {
+        transform: translate(-250px);
       }
     }
 }
