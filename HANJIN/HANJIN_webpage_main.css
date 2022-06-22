@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+
+/* what we do ************************/
+aside ul {
+  max-width: 1230px; min-width: 615px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap; 
+}
+aside ul li {
+  width: 50%;
+  height: 286px; 
+}
+aside ul li:nth-child(1) {
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside ul li:nth-child(1) h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+aside ul li:nth-child(2), 
+aside ul li:nth-child(5) {
+  background-color: #101e5a;
+}
+aside ul li:nth-child(3) {
+  background: url(./images/banner02.png) no-repeat;
+}
+aside ul li:nth-child(4) {
+  background: url(./images/banner03.png) no-repeat;
+}
+
+aside ul li a {
+  display: block;
+  height: 100%;
+  /* background-color: aqua; */
+  color: #fff;
+  padding: 30px;
+}
+
+aside ul li a h3 {
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+aside ul li a p {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+/* 중간배너 */
+.banner2 {
+  margin: 100px 0;
+  background: url(./images/banner04.png) no-repeat 50% 50%;
+  height: 285px;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner2 .txt {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+.banner2 .txt h2 {
+  font-size: 35px;
+}
+.banner2 .txt p {
+  margin: 20px;
+}
+.banner2 .txt a {
+  display: block;
+  text-align: center;
+  width: 150px; height: 40px; line-height: 40px;
+  color: #fff;
+  background-color: #666666;
+}
+
+.banner2 .txt::after,
+.banner2 .txt::before {
+  content: "";
+  background-color: #101e5a;
+  width: 8px; height: 90%;
+  position: absolute;
+
+  top: 50%; right: 0;
+  transform: translate(-50%, -50%) skewY(45deg);
+}
+.banner2 .txt::before {
+  background-color: #f57f20;
+  left: 0; top: 50%;
+  transform: translate(50%, -50%) skewY(45deg);
+}
+
+/******************************* business 영역 ********************************/
+.business {
+  width: 1280px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.business .main_txt {
+  text-align: center;
+  font-weight: bold;
+}
+.business .main_txt h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.business .txt {
+  width: 100%;
+}
+.business .side_txt {
+  margin: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+.business .side_txt h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.business figure {
+  margin: 10px;
+  border: 2px solid rgb(192, 192, 192);
+}
+.business figure p{
+ text-align: center;
+ padding: 10px;
+ font-size: 18px;
+ font-weight: bold;
+}
+
+@media (min-width:768px) {
+  .business { width: ; }
+}

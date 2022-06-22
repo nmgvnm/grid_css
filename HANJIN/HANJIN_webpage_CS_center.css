@@ -1,0 +1,38 @@
+@charset "utf-8";
+.CS_center {
+  background-color: #cfdbf0;
+  margin: 0 auto;
+}
+.CS_center .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.CS_center .wrapper .main_txt {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+.CS_center .wrapper .main_txt h2{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.CS_center .wrapper form {
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+}
+.CS_center .wrapper form label {
+  display: flex;
+  margin: 2px;
+}
+.CS_center .wrapper form span {
+  background-color: brown;
+  display: block; width: 70px;
+  text-align: right;
+}
+.CS_center_contents {
+  background-color: tomato;
+}

@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+/**************************** 최상단_로그인 ****************************/
+.top {
+  background-color: #101e5a;
+}
+.top ul {
+  display: flex;
+
+  margin: 0 auto;
+  height: 33px;
+  max-width: 1300px; min-width: 1000px;
+  justify-content: flex-end;
+
+  background-color: #101e5a;
+}
+.top ul a {
+  width: 143px;
+  text-align: center;
+  display: block;
+  color: #fff;
+  height: 33px; line-height: 33px;
+  border-right: 1px solid #ddd;
+
+  font-size: 14px;
+}
+.top ul li:first-child a {
+  border-left: 1px solid #ddd;
+}
+
+/************************* nav영역_상단 메뉴 ***************************/
+.nav .wrapper {
+  margin: 0 auto;
+  max-width: 1300px; min-width: 1000px;
+  overflow: hidden;
+  line-height: 100px;
+  height: 100px; 
+}
+.nav .wrapper > a {
+  height: 100px; 
+  float: left;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  
+}
+
+.nav .wrapper ul {
+  width: 70%;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+}
+.nav .wrapper ul a {
+  display: block;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000;
+}
+.nav .wrapper ul a:hover {
+  color: #262a3d;
+}
+/************************** banner영역 **************************/
+
+.banner1 {
+  height: 652px;
+  background-color: #ddd;
+  background: url(./images/banner1.png) no-repeat;
+
+  position: relative;
+}
+.banner1 .main_txt {
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+}
+
+.banner1 .main_txt p:nth-child(1) {
+  font-size: 54px;
+  font-weight: 800;
+}
+.banner1 .main_txt p:nth-child(2) {
+  font-size: 18px;
+  margin: 10px 0 50px 0;
+  font-weight: 500;
+
+}
+.banner1 .main_txt a {
+  color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 30px;
+}
+
+.banner1 .bottom_icon {
+  display: flex;
+
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 18px;
+}
+.banner1 .bottom_icon a {
+  color: #dfdfdf;
+  padding: 2px;
+}
+.banner1 .bottom_icon li:nth-child(3) a {
+  margin-right: 8px;
+}
+
+
+
+.banner1 .next_icon a{
+  /* background-color: tomato; */
+  position: absolute;
+  padding: 10px;
+}
+.banner1 .next_icon a:nth-child(1){ 
+
+  top: 50%; left: 0;
+  transform: translate(0, -50%);
+ }
+.banner1 .next_icon a:nth-child(2){ 
+  top: 50%; right: 0;
+  transform: translate(0, -50%);
+ }
+
